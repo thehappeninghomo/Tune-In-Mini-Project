@@ -1,0 +1,58 @@
+
+@mixin flexBox() {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.profileIcon{
+  background-color: teal;
+  padding: 2px;
+}
+nav {
+  color: white;
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  user-select: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding-right: 10px;
+  
+  
+  div {
+    // background-color: black;
+    @include flexBox;
+  }
+
+  .navigation {
+    flex-flow: row wrap;
+  }
+
+  .language {
+    padding: 10px;
+  }
+
+  .Dropdown-btn {
+    // background-color: black;
+    
+    color: white;
+    display: flex;
+    .wrapper {
+      padding: 0;
+      flex-direction: column;
+    }
+  }
+  .Dropdown-btn:hover{
+    opacity: 0.8;
+    background-color: teal;
+    color: white;
+  }
+}
+.profile{
+  color: teal;
+  }
+@media only screen and (max-width: 970px) {
+  nav {
+    display: none;
+  }
+}
