@@ -1,0 +1,13 @@
+.lang-list{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  button{
+    color: white;
+    background-color: teal;
+    margin: 5px;
+  }
+  button:hover{
+    background-color: black;
+  }
+}
