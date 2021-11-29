@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+.home-music-container {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 18% 80%;
+  user-select: none;
+}
+
+@media only screen and (max-width: 970px) {
+  .home-music-container {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=Home.scss.map */
